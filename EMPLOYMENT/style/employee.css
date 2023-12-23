@@ -1,0 +1,623 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+ 
+}
+.banner
+{
+    background:linear-gradient(rgb(0, 0, 0,0.5),#030a4d),url('../Images/online-school-equipment-home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo h1
+{
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    color:#09ffea;
+    z-index: 999;
+    position: fixed;
+}
+.banner-text
+{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2%;
+}
+span
+{
+    color: #09ffea;
+    animation: animate 10s infinite;
+}
+@keyframes animate 
+{
+    0%
+    {
+        color: #0399df;
+    }
+    50%
+    {
+        color: aquamarine;
+    }
+    100%
+    {
+        color: rgb(39, 1, 255);
+    }
+}
+.banner-text p
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner-btn
+{
+    margin: 40px auto 0;
+}
+.banner-btn a
+{
+    width: 140px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 0.5px solid;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+    transition: .5s;
+}
+.banner-btn a:hover
+{
+    transform: scale(0.9);
+    width: 140px;
+    background-color: rgb(43, 43, 126);
+    color: white;
+}
+#sidenav
+{
+    
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgb(12, 161, 206);
+    z-index: 2;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu-btn
+{
+    top: 20px;
+    right: 30px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+    text-align: center; 
+}
+.menu-btn i
+{
+    width: 25px;
+    height: 18px;
+    margin: auto;
+    font-size: 25px;
+    color:#09ffea;
+    cursor: pointer;
+    position: fixed;
+}
+
+/* Media query for small screen in the banner */
+
+@media  screen and (max-width: 770px) {
+    .banner-text h1
+    {
+        font-size: 30px;
+    }
+    .banner-text p
+    {
+        font-size: 18px;
+        font-style: italic;
+    }
+    .banner-btn a
+    {
+        display: block;
+        margin: 1rem auto;
+    }
+    #sidenav
+    {
+        width: 180px;
+    }
+}
+
+.about
+{
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(6, 6, 97);
+}
+.about-txt
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.about-txt p
+{
+    margin: auto;
+    font-size: 20px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.about-txt h1
+{
+    color: white;
+}
+.about-box
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.about-features
+{
+    flex-basis: 50%;
+}
+.about-features-image
+{
+    flex-basis: 50%;
+    margin: auto;
+}
+.about-features-image img
+{
+    width: 70%;
+    border-radius: 10px;
+}
+.about-features h2
+{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    color: aqua
+}
+.about-descr
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about-icon i
+{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border: 8px;
+    color: rgb(5, 28, 243);
+}
+.about-content p
+{
+    padding: 0 20px;
+    text-align: initial;
+    color: white;
+}
+
+/* Media Query for the about us section */
+@media  screen and (max-width: 770px)
+{
+    .about-txt p
+    {
+        font-size: 20px;
+    }
+    .about-txt h1
+    {
+        font-size: 35px;
+    }
+    .about-features
+    {
+    flex-basis: 100%;
+    }
+    .about-features-image
+    {
+    flex-basis: 100%;
+    }
+    .about-features-image img
+    {
+        width: 100%;
+    }
+    .about-features h2
+    {
+        font-size: 26px;
+        font-family: 'Times New Roman', Times, serif;
+        color: aqua;
+        
+    }
+    .about-content p
+    {
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+
+.service
+{
+    background-color: rgb(6, 6, 97);
+    width: 100%;
+    padding: 20px 0;
+}
+.service-tittle
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.service-tittle p
+{
+    margin: auto;
+    font-size: 20px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.service-tittle h1
+{
+    color: white;
+}
+.service-box
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.service-container
+{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    color: #ffff;
+    position: relative;
+}
+.service-container img
+{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgb(0, 0, 0,0.5),#2636c9);
+    opacity: 0;
+    transition: 1s;
+}
+.service-container:hover .overlay{
+    opacity: 1;
+}
+.service-descr
+{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+hr
+{
+    background: #ffff;
+    border: 0;
+    width: 60%;
+    height: 2px;
+    margin: 15px auto;
+}
+.service-descr p
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+.service-container:hover .service-descr{
+    bottom: 40%;
+    opacity: 1;
+}
+
+/* Media Query for the services section */
+@media  screen and (max-width: 770px)
+{
+    .service-container
+    {
+        flex-basis: 100%;
+    }
+    .service-container:hover .service-descr{
+        bottom: 10% !important;
+    }
+    
+}
+
+
+.comments
+{
+    background-color: rgb(6, 6, 97);
+    width: 100%;
+    padding: 20px 0;
+}
+.comments-tittle
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.comments-tittle p
+{
+    margin: auto;
+    font-size: 20px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.comments-tittle h1
+{
+    color: white;
+}
+.comment-row
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.comments-col{
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px #0399df;
+    transition: .5s;
+}
+.comments-col p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.comments-col:hover 
+{
+    transform: translateY(10px);
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    justify-content: space-evenly;
+    
+}
+.user .fa-user
+{
+    color: aqua;
+    gap: 1rem;
+}
+.user .fa-twitter
+{
+    color: aqua;
+    transition: .1s;
+    cursor: pointer;
+}
+.user .fa-twitter:hover
+{
+    transform: scale(1.1);
+}
+.user-info h4
+{
+    color: #09ffea;
+}
+.user-info small
+{
+    color: rgb(9, 228, 155);
+    cursor: pointer;
+}
+/* Media Query for the comments section */
+@media  screen and (max-width: 770px)
+{
+    .comments-col
+    {
+        flex-basis: 100%;
+    }
+    .comments-col p
+    {
+        font-size: 20px;
+    }
+    .user .fa-user
+    {
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 2%;
+    }
+    .user .fa-twitter
+    {
+        font-size: 25px;
+    }
+    .user-info h4
+    {
+        font-size: 25px;
+    }
+    .user-info small
+    {
+        font-size: 25px;
+    }
+}
+
+
+
+.footer
+{
+    background-color: rgb(6, 6, 97);
+    width: 100%;
+    padding: 20px 0;
+}
+.footer-tittle
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.footer-tittle p
+{
+    margin: auto;
+    font-size: 17px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.footer-tittle h1
+{
+    color: white;
+}
+.footer-row
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right, .footer-middle
+{
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-left h1
+{
+    color: #09ffea;
+    font-size: 20px;
+}
+.footer-left li
+{
+    list-style: none;
+    padding: 10px;
+}
+.footer-left a
+{
+    text-decoration: none;
+    color: white;
+}
+.footer-middle h1
+{
+    color: #09ffea;
+    font-size: 20px;
+}
+.socal-link-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-middle a,i
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+    width: 10px;
+    color: #ffff;
+}
+.footer-right h1
+{
+    color: #09ffea;
+    font-size: 20px;
+}
+.footer-right a,i
+{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.footer-right h5,i
+{
+    margin-top: 20px;
+}
+.footer-right h5
+{
+    margin-left: 20px;
+    color: white;
+}
+.footer-right i
+{
+    color: #2705be;
+}
+
+/* Media Query for the footer section */
+@media  screen and (max-width: 770px)
+{
+    .footer-row
+    {
+        width: 100%;
+    }
+    .footer-left, .footer-right, .footer-middle
+    {
+        flex-basis: 100%;
+    }
+    .footer-left h1
+    {
+        font-size: 25px;
+    }
+    .footer-left li
+    {
+        font-size: 20px;
+    }
+    .footer-middle h1
+    {
+        font-size: 25px;
+    }
+    .socal-link-containe a,li
+    {
+        font-size: 20px;
+    }
+    .footer-right h1
+    {
+        font-size: 20px;
+    }
+    .ft-container a,h5
+    {
+        font-size: 15px;
+    }
+}
+
+
+.last
+{
+    text-align: center;
+    background-color: rgb(6, 6, 97);
+    color: white;
+}
+.last h4
+{
+    text-decoration: none;
+}
+
